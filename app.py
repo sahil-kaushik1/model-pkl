@@ -21,7 +21,7 @@ def text_process(review):
 app = Flask(__name__)
 
 # Load the model
-with open('algo/Fake-Reviews-Detection/model.pkl', 'rb') as file:
+with open('model.pkl', 'rb') as file:
     model = pickle.load(file)
 
 # Endpoint to make predictions
